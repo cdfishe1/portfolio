@@ -1,6 +1,6 @@
-/* * {
-    border: 1px solid black;
-} */
+h1, h2, h3 {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 .page-container {
     display: grid;
@@ -30,6 +30,7 @@ nav {
 nav ul li {
     display: inline;
     list-style: none;
+    padding: 1vw;
 }
 
 main {
