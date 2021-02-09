@@ -35,7 +35,7 @@ main {
 }
 
 .project2, .project3, .project4, .project5 {
-    width: 50%;
+    width: 49%;
 }
 
 aside {
@@ -45,6 +45,15 @@ aside {
 address {
     grid-area: contact;
 }
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .contact-wrapper > p {
+    background-color: red;
+} */
 
 footer {
     grid-area: footer;
