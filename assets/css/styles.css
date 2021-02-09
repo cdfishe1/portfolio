@@ -2,8 +2,36 @@
     border: 1px solid black;
 }
 
-h1 {
-    font-size: xx-large;
+.page-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        'header'
+        'portfolio'
+        'aboutme'
+        'contact'
+        'footer';
 }
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: porfolio;
+}
+
+aside {
+    grid-area: aboutme;
+}
+
+address {
+    grid-area: contact;
+}
+
+footer {
+    grid-area: footer;
+}
+
 
 
