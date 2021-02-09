@@ -1,7 +1,8 @@
-h1, h2, h3 {
+h1, h2, h3, .navlinks {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Sets grid for page */
 .page-container {
     display: grid;
     grid-template-columns: auto;
@@ -15,6 +16,7 @@ h1, h2, h3 {
     row-gap: 2vh;
 }
 
+/* Header */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +25,7 @@ header {
     padding: 1vh; 
 }
 
+/* Nav */
 nav {
     margin: 1vh;
 }
@@ -33,6 +36,11 @@ nav ul li {
     padding: 1vw;
 }
 
+.navlinks {
+    text-decoration: none;
+}
+
+/* Portfolio */
 main {
     grid-area: portfolio;
 }
@@ -55,6 +63,7 @@ main h2 {
     padding: 1vh;
 }
 
+/* About me */
 aside {
     grid-area: aboutme;
 }
@@ -67,6 +76,7 @@ aside h2 {
     padding: 1vh;
 }
 
+/* Contact */
 address {
     font-style: normal;
     grid-area: contact;
@@ -82,11 +92,25 @@ address {
     padding: 1vh;
 }
 
-
-
+/* Footer */
 footer {
     grid-area: footer;
 }
+
+/* Respond to phones */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        font-size: 1.25rem;
+    }
+
+    footer h2 {
+        font-size: 1.25rem;
+    }
+  }
 
 
 
