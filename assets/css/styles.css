@@ -4,7 +4,7 @@
 
 .page-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: auto 1fr;
     grid-template-areas:
         'header'
         'portfolio'
@@ -14,11 +14,23 @@
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     grid-area: header;
 }
 
 main {
     grid-area: porfolio;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project2, .project3, .project4, .project5 {
+    width: 50%;
 }
 
 aside {
