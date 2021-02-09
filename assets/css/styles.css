@@ -19,7 +19,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    grid-area: header; 
+    grid-area: header;
+    padding: 1vh; 
+}
+
+nav {
+    margin: 1vh;
 }
 
 nav ul li {
@@ -31,9 +36,17 @@ main {
     grid-area: portfolio;
 }
 
+main h2 {
+    margin-left: 1vw;
+}
+
 .portfolio-wrapper {
     display: flex;
     flex-wrap: wrap;
+}
+
+.featured-project {
+    padding: 1vh;
 }
 
 .project2, .project3, .project4, .project5 {
@@ -45,13 +58,27 @@ aside {
     grid-area: aboutme;
 }
 
+aside h2 {
+    margin-left: 1vw;
+}
+
+.about-me {
+    padding: 1vh;
+}
+
 address {
+    font-style: normal;
     grid-area: contact;
 }
 
 .contact-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-wrapper > p {
+    padding: 1vh;
 }
 
 
