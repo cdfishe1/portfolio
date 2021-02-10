@@ -5,8 +5,8 @@ h1, h2, h3, .navlinks {
 /* Sets grid for page */
 .page-container {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto 1fr auto auto auto;
+    /* grid-template-rows: auto; */
     grid-template-areas:
         'header'
         'portfolio'
@@ -46,6 +46,8 @@ nav ul li {
 /* Portfolio */
 main {
     grid-area: portfolio;
+    height: 100%;
+    
 }
 
 main h2 {
@@ -68,7 +70,7 @@ main h2 {
 }
 
 .project2, .project3, .project4, .project5 {
-    width: 45%;
+    width: 49%;
     padding: 1vh;
     background-color: orange;
 }
