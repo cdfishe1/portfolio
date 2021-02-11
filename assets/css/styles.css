@@ -3,22 +3,19 @@ h1, h2, h3, .navlinks {
 }
 
 /* Sets grid for page */
-.page-container {
+body {
     display: grid;
-    grid-template-columns: repeat (2 auto);
-    grid-template-rows: repeat (7 auto);
-    grid-template-areas:
-        'header header'
-        'featured featured'
-        'project2 project3'
-        'project4 project5'
-        'about-me about-me'
-        'contact contact'
-        'footer footer';
-    row-gap: 1vh;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: auto 2fr 1fr 1fr auto;
+    grid-template-areas: 
+        '. header header header header .'
+        '. about main main contact .'
+        '. about project1 project2 contact .'
+        '. about project3 project4 contact .'
+        '. footer footer footer footer .' ;
     column-gap: 1vw;
+    row-gap: 1vh;
     height: 100vh;
-
 }
 
 /* Header */
@@ -48,6 +45,13 @@ nav ul li {
     text-decoration: none;
 }
 
+main {
+    grid-area: main;
+    padding: 1vh;
+    background-color: midnightblue;
+    color: white;
+}
+
 /* Portfolio */
 main h2 {
     margin-bottom: 1vh;
@@ -55,27 +59,20 @@ main h2 {
     color: white;
 }
 
-.featured-project {
-    grid-area: featured;
-    padding: 1vh;
-    background-color: midnightblue;
-    color: white;
-}
-
 .project2 {
-    grid-area: project2;
+    grid-area: project1;
 }
 
 .project3 {
-    grid-area: project3;
+    grid-area: project2;
 }
 
 .project4 {
-    grid-area: project4;
+    grid-area: project3;
 }
 
 .project5 {
-    grid-area: project5;
+    grid-area: project4;
 }
 
 .project2, .project3, .project4, .project5 { 
@@ -84,7 +81,7 @@ main h2 {
 
 /* About me */
 aside {
-    grid-area: about-me;
+    grid-area: about;
     background-color: red;
     color: white;
     padding: 1vh;
@@ -103,15 +100,15 @@ address {
     
 }
 
-.contact-wrapper {
+/* .contact-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
 
-.contact-wrapper > p {
+/* .contact-wrapper > p {
     padding: 1vh;
-}
+} */
 
 /* Footer */
 footer {
@@ -122,7 +119,7 @@ footer {
 }
 
 /* Respond to phones */
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
     }
@@ -137,7 +134,7 @@ footer {
     footer h2 {
         font-size: 1.25rem;
     }
-  }
+  } */
 
 
 
