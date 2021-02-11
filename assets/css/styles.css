@@ -1,4 +1,4 @@
-h1, h2, h3, .navlinks {
+h1, h2, h3, .navlinks, footer {
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -6,6 +6,7 @@ h1, h2, h3, .navlinks {
     --headfoot: #023E8A;
     --nav: #ADE8F4;
     --navtext: #03045E;
+    --dark: black;
 }
 
 /* Sets grid for page */
@@ -113,14 +114,13 @@ main p {
 /* About me */
 aside {
     grid-area: about;
-    background-color: red;
-    color: white;
+    color: var(--dark);
     padding: 1vh;
 }
 
-aside h2 {
+/* aside h2 {
     
-}
+} */
 
 aside h2::before {
     content:url(../images/phone-headshot.jpg);
@@ -132,14 +132,31 @@ aside h2::before {
 
 /* Contact */
 address {
-    display: flex;
-    flex-wrap: wrap;
     grid-area: contact;
     font-style: normal;
-    background-color: saddlebrown;
-    color: white;
     
+    color: var(--dark);  
 }
+
+address h2 {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+address p {
+    padding: 1vh 1vw;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-wrapper a {
+    padding: 1vh 1vw;
+}
+
 
 
 
@@ -149,6 +166,10 @@ footer {
     background-color: var(--headfoot);
     color: white;
     text-align: center;
+}
+
+footer h4 {
+    font-size: 1.5rem;
 }
 
 /* Respond to phones */
