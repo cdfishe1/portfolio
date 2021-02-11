@@ -5,23 +5,28 @@ h1, h2, h3, .navlinks {
 /* Sets grid for page */
 .page-container {
     display: grid;
-    grid-template-columns: auto auto 1fr auto auto;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat (2 auto);
+    grid-template-rows: repeat (7 auto);
     grid-template-areas:
-    '. header header header .'
-    '. aboutme portfolio contact .'
-    '. footer footer footer .';
-    row-gap: 2vh;
-    column-gap: 2vw;
+        'header header'
+        'featured featured'
+        'project2 project3'
+        'project4 project5'
+        'about-me about-me'
+        'contact contact'
+        'footer footer';
+    row-gap: 1vh;
+    column-gap: 1vw;
     height: 100vh;
+
 }
 
 /* Header */
 header {
+    grid-area: header;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    grid-area: header;
     padding: 1vh;
     background-color: black;
     color: white;
@@ -44,69 +49,58 @@ nav ul li {
 }
 
 /* Portfolio */
-main {
-    grid-area: portfolio;
-}
-
 main h2 {
-    margin-bottom: 1vw;
+    margin-bottom: 1vh;
     background-color: maroon;
     color: white;
 }
 
-.portfolio-wrapper {
-    
-    
-}
-
 .featured-project {
+    grid-area: featured;
     padding: 1vh;
     background-color: midnightblue;
     color: white;
-    margin-bottom: 1vh;
-}
-
-.project2, .project3, .project4, .project5 {
-    
-    
-    background-color: orange;
 }
 
 .project2 {
-    
+    grid-area: project2;
 }
 
 .project3 {
-    
+    grid-area: project3;
 }
 
 .project4 {
-    
+    grid-area: project4;
+}
+
+.project5 {
+    grid-area: project5;
+}
+
+.project2, .project3, .project4, .project5 { 
+    background-color: orangered;
 }
 
 /* About me */
 aside {
-    grid-area: aboutme;
+    grid-area: about-me;
     background-color: red;
     color: white;
-    width: 20vw;
+    padding: 1vh;
 }
 
 aside h2 {
     margin-left: 1vw;
 }
 
-.about-me {
-    padding: 1vh;
-}
-
 /* Contact */
 address {
-    font-style: normal;
     grid-area: contact;
+    font-style: normal;
     background-color: saddlebrown;
     color: white;
-    width: 20vw;
+    
 }
 
 .contact-wrapper {
@@ -129,8 +123,6 @@ footer {
 
 /* Respond to phones */
 @media only screen and (max-width: 480px) {
-    
-    
     h1 {
         font-size: 1.5rem;
     }
