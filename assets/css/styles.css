@@ -233,8 +233,9 @@ footer h4 {
 
     aside {
         min-width: 232px;
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 1vh 1vw;
+        /* margin: auto 0; */
     }
 
     aside h2 {
