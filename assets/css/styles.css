@@ -209,7 +209,7 @@ footer h4 {
 }
 
 /* Respond to tablets */
-@media only screen and (min-width: 481px) and (max-width: 1024px)  {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
     body {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -222,7 +222,9 @@ footer h4 {
             'about contact contact'
             'footer footer footer';
         
-        font-size: 2.4vh;
+        font-size: 1 vh;
+        width: 80%;
+        margin: 0 auto;
     }
 
     header {
@@ -247,13 +249,9 @@ footer h4 {
         margin-right: auto;
     }
 
-    /* address {
-        justify-content: flex-end;
-    } */
-
-    
-
-
+    address {
+        background-color: var(--nav);
+    }
     
 }
 /* Respond to phones */
