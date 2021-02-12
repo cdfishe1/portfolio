@@ -17,15 +17,15 @@ h1, h2, h3, .navlinks, footer {
 body {
     display: grid;
     grid-template-columns: repeat (2 auto);
-        grid-template-rows: repeat (7 auto);
-        grid-template-areas: 
-            'header header'
-            'main main'
-            'project1 project2'
-            'project3 project4'
-            'about about' 
-            'contact contact'
-            'footer footer';
+    grid-template-rows: repeat (7 auto);
+    grid-template-areas: 
+        'header header'
+        'main main'
+        'react node'
+        'mongo fun'
+        'about about' 
+        'contact contact'
+        'footer footer';
     column-gap: 1vw;
     row-gap: 1vh;
     height: 100vh;
@@ -65,7 +65,7 @@ nav ul li:hover {
     text-decoration: none;
 }
 
-/* Portfolio */
+/* Featured Portfolio */
 main {
     grid-area: main;
     padding: 5rem;
@@ -112,8 +112,9 @@ main p {
     opacity: 0.8;
 }
 
+/* React project */
 .react {
-    grid-area: project1;
+    grid-area: react;
     background-image: url(../images/react.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -122,8 +123,9 @@ main p {
     margin-bottom: 1vh;
 }
 
+/* Nodejs project */
 .node {
-    grid-area: project2;
+    grid-area: node;
     background-image: url(../images/node-blackonwhite.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -132,8 +134,9 @@ main p {
     margin-bottom: 1vh;
 }
 
+/* Mongodb project */
 .mongo {
-    grid-area: project3;
+    grid-area: mongo;
     background-image: url(../images/mongoDB.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -141,8 +144,9 @@ main p {
     margin-bottom: 1vh;
 }
 
+/* Fun project */
 .fun {
-    grid-area: project4;
+    grid-area: fun;
     background-image: url(../images/dice.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -174,17 +178,6 @@ aside p {
     padding: 1vh 0;
 }
 
-/* aside h2 {
-    
-} */
-
-/* aside h2::before {
-    content:url(../images/phone-headshot.jpg);
-    position: relative;
-    float: left;
-    margin-right: 2vw;
-    border-radius: 8px;
-} */
 
 /* Contact */
 address {
@@ -212,9 +205,6 @@ address p {
     padding: 1vh 1vw;
 }
 
-
-
-
 /* Footer */
 footer {
     grid-area: footer;
@@ -232,25 +222,27 @@ footer h4 {
    body {
        font-size: 3vh;
    }
-
-/* Respond to tablets */
-@media only screen and (max-width: 480px) {
-    /* body {
-        display: grid;
-        grid-template-columns: repeat (2 auto);
-            grid-template-rows: repeat (7 auto);
-            grid-template-areas: 
-                'header header'
-                'main main'
-                'project1 project2'
-                'project3 project4'
-                'about about' 
-                'contact contact'
-                'footer footer';
-        column-gap: 1vw;
-        row-gap: 1vh;
-        height: 100vh;
-    } */
 }
 
-
+/* Respond to tablets */
+@media only screen and (max-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat (5, 1fr);
+        grid-template-rows: auto 2fr 1fr 1fr 1fr auto;
+        grid-template-areas: 
+            '. header header header .'
+            '. contact main main .'
+            '. contact react node .'
+            '. contact mongo fun .'
+            '. about about about .' 
+            '. contact contact contact .'
+            '. footer footer footer .';
+        
+        
+    }
+    
+    header {
+        background-color: green;
+    }
+}
