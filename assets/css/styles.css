@@ -37,7 +37,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1vh;
+    padding: 1vh 0;
     background-color: var(--headfoot);
     color: white;
 }
@@ -110,17 +110,16 @@ main p {
     background-repeat: no-repeat;
     background-position: center center;
     background-color: var(--nav);
-    margin-left: 1vw;
     margin-bottom: 1vh;
 }
 
 .project2 {
     grid-area: project2;
-    background-image: url(../images/nodejs.svg);
+    background-image: url(../images/node-blackonwhite.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-color: var(--nav); */
+    background-color: black;
     margin-bottom: 1vh;
 }
 
@@ -140,7 +139,7 @@ main p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-color: var(--nav); */
+    background-color: var(--headfoot);
     margin-bottom: 1vh;
 }
 
@@ -173,7 +172,6 @@ aside h2::before {
 address {
     grid-area: contact;
     font-style: normal;
-    
     color: var(--dark);  
 }
 
