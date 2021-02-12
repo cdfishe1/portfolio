@@ -79,11 +79,9 @@ main {
 }
 
 main h2 {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
     font-size: 1rem;
     margin: 1vh 1vw;
-    background-color: maroon;
+    background-color: var(--headfoot);
     color: white;
     text-align: center;
     border-radius: 8px;
@@ -97,13 +95,16 @@ main p {
 
 .project-heading {
     margin: 1vh 1vw;
-    background-color: blue;
+    background-color: var(--headfoot);
     color: white;
     text-align: center;
     border-radius: 8px;
+    padding: 1vh 1vw;
+    position: absolute;
+    font-size: 1rem;
 }
 
-.project1 {
+.react {
     grid-area: project1;
     background-image: url(../images/react.svg);
     background-size: contain;
@@ -113,7 +114,7 @@ main p {
     margin-bottom: 1vh;
 }
 
-.project2 {
+.node {
     grid-area: project2;
     background-image: url(../images/node-blackonwhite.svg);
     background-size: contain;
@@ -123,7 +124,7 @@ main p {
     margin-bottom: 1vh;
 }
 
-.project3 {
+.mongo {
     grid-area: project3;
     background-image: url(../images/mongoDB.png);
     background-size: contain;
@@ -133,7 +134,7 @@ main p {
     margin-bottom: 1vh;
 }
 
-.project4 {
+.fun {
     grid-area: project4;
     background-image: url(../images/dice.svg);
     background-size: contain;
