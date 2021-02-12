@@ -11,6 +11,7 @@ h1, h2, h3, .navlinks, footer {
     --nav: #ADE8F4;
     --navtext: #03045E;
     --dark: black;
+    --light: white;
 }
 
 /* Sets grid for page */
@@ -74,7 +75,7 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     height: auto;
-    color: white;
+    color: var(--light);
     
 }
 
@@ -83,7 +84,7 @@ main h2 {
     margin: 1vh 1vw;
     padding: 1vh 1vw;
     background-color: var(--headfoot);
-    color: white;
+    color: var(--light);
     text-align: center;
     border-radius: 8px;
     position: relative;
@@ -235,7 +236,13 @@ footer h4 {
         min-width: 232px;
         font-size: 1.5rem;
         padding: 1vh 2vw;
-        /* margin: auto 0; */
+        margin-right: 1vw;
+    }
+
+    main h2 {
+        /* position: absolute; */
+        top: 13em;
+        left: 3em;
     }
 
     aside h2 {
