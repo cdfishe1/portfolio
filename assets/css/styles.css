@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, .navlinks, footer {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -64,9 +68,9 @@ nav ul li:hover {
 /* Portfolio */
 main {
     grid-area: main;
-    padding: 11vh 1vw;
+    padding: 5rem;
     background-image: url(../images/featured-project.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     height: auto;
@@ -75,6 +79,9 @@ main {
 }
 
 main h2 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 1rem;
     margin: 1vh 1vw;
     background-color: maroon;
     color: white;
@@ -87,9 +94,6 @@ main p {
     padding: 1vh 1vw;
 }
 
-.featured-project {
-    /* background-image: url(../images/featured-project.svg); */
-}
 
 .project-heading {
     margin: 1vh 1vw;
@@ -101,23 +105,48 @@ main p {
 
 .project1 {
     grid-area: project1;
+    background-image: url(../images/react.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--nav);
+    margin-left: 1vw;
+    margin-bottom: 1vh;
 }
 
 .project2 {
     grid-area: project2;
+    background-image: url(../images/nodejs.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-color: var(--nav); */
+    margin-bottom: 1vh;
 }
 
 .project3 {
     grid-area: project3;
+    background-image: url(../images/mongoDB.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-color: var(--nav); */
+    margin-bottom: 1vh;
 }
 
 .project4 {
     grid-area: project4;
+    background-image: url(../images/dice.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-color: var(--nav); */
+    margin-bottom: 1vh;
 }
 
 .sub-projects { 
-    background-color: orangered;
-    padding: 1vh 1vw;
+    padding: 3rem;
+    
 
 }
 
