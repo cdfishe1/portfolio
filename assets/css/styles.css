@@ -221,10 +221,7 @@ footer h4 {
             'about mongo fun'
             'about contact contact'
             'footer footer footer';
-        
-        font-size: 1 vh;
-        /* width: 80%; */
-        /* margin: 0 auto; */
+
     }
 
     header {
@@ -236,6 +233,8 @@ footer h4 {
 
     aside {
         min-width: 232px;
+        font-size: 1rem;
+        padding: 1vh 1vw;
     }
 
     aside h2 {
