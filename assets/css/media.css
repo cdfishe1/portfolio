@@ -1,0 +1,77 @@
+/* Respond to desktop */
+
+@media only screen and (min-width: 1025px) {
+    aside img {
+        width: 40%;
+        height: auto;
+    }
+
+   aside p {
+       font-size: 1.25vw;
+   }
+
+   body {
+       width: 80%;
+       margin: 0 auto;
+   }
+}
+
+/* Respond to tablets */
+@media only screen and (min-width: 481px)  {
+    body {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto 2fr 1fr 1fr auto;
+        grid-template-areas: 
+            'header header header'
+            'about main main'
+            'about react node'
+            'contact mongo fun'
+            'footer footer footer';
+
+    }
+
+    header {
+        justify-content: space-between;
+    }
+    header h1 {
+        padding-left: 2vw;
+    }
+
+    aside {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        position: relative;
+        float: left;
+        font-size: 1rem;
+        padding: 1vh 2vw;
+       
+    }
+
+    aside h2 {
+    text-align: center;
+    }
+
+    aside img {
+        margin: 1vh auto;
+    }
+
+    address {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        
+    }
+
+    address h2 {
+        margin-bottom: 2vh;
+    }
+}
+
+/* Respond to phones */
+@media screen and (max-width: 480px) {
+   body {
+       font-size: 3vh;
+   }
+}

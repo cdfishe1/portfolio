@@ -265,9 +265,9 @@ footer h2 {
     font-size: 1.5rem;
 }
 
-/* Respond to desktop */
+Respond to desktop
 
-@media only screen and (min-width: 1025px) {
+/* @media only screen and (min-width: 1025px) {
     aside img {
         width: 40%;
         height: auto;
@@ -281,10 +281,10 @@ footer h2 {
        width: 80%;
        margin: 0 auto;
    }
-}
+} */
 
 /* Respond to tablets */
-@media only screen and (min-width: 481px)  {
+/* @media only screen and (min-width: 481px)  {
     body {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -337,10 +337,10 @@ footer h2 {
 }
 
 /* Respond to phones */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
    body {
        font-size: 3vh;
    }
-}
+} */ */
 
 
