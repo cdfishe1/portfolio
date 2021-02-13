@@ -19,7 +19,12 @@ This is my professional portfolio page.
 
 ## Portfolio Landing Page
 
-![Image of Horiseon Landing Page](assets/images/desktop-screenshot.png)
+### Desktop and Tablet Page
+![Charles Fisher landing page desktop and tablet](assets/images/desktop-screenshot.png)
+
+### Mobile Page
+![Charles Fisher landing page mobile device](assets/images/phone-screen.gif)
+
 
 ## Deployment
 
@@ -29,6 +34,7 @@ Site deployed at [Charles Fisher](https://cdfishe1.github.io/portfolio/)
 
 * Complete creation of html and css.
 * Used flex grid and flex box for layout and responsiveness.
+* Designed from the mobile experience first up to larger screen sizes.
 * IMPORTANT NOTICE: As of 2/13/2021 I have no complete projects to fill the projects sections of this page.
 
 
