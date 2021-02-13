@@ -2,10 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Font for headers and links */
 h1, h2, h3, .navlinks, figcaption, footer {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Sets color variables */
 :root {
     --slate: #023E8A;
     --lightblue: #ADE8F4;
@@ -100,7 +102,7 @@ main p {
     padding: 1vh 1vw;
 }
 
-
+/* Headings for sub-projects */
 .project-heading {
     display: inline-block;
     position: relative;
@@ -148,12 +150,14 @@ main p {
     
 }
 
+/* Background images for sub-projects */
 .project-background-images {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
+/* Padding for sub-projects */
 .sub-projects { 
     padding: 3rem;
 }
@@ -223,6 +227,7 @@ address figcaption {
     font-size: 1rem;
 }
 
+/* Flexbox for contact icons */
 address .contact-icon-wrapper {
     display: flex;
     flex-wrap: wrap;
