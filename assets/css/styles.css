@@ -38,9 +38,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1vh 0;
     background-color: var(--slate);
     color: var(--bright);
+    padding: 1vh 0;
+
 }
 
 /* Nav */
@@ -73,30 +74,26 @@ nav ul li a:visited {
 /* Featured Portfolio */
 main {
     grid-area: main;
-    padding: 5rem;
     background-image: url(../images/featured-project.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: auto;
     color: var(--light); 
+    padding: 5rem;
     
 } 
 
 main h2 {
-    font-size: 1rem;
-    margin: 1vh 1vw;
-    padding: 1vh 1vw;
-    background-color: var(--slate);
-    color: var(--bright);
-    text-align: center;
-    border-radius: 8px;
     display: inline-block;
     position: relative;
     bottom: 5em;
     right: 4.5em;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--slate);
+    color: var(--bright);
+    border-radius: 8px;
     opacity: 0.8;
-    
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+
 }
 
 main p {
@@ -105,61 +102,56 @@ main p {
 
 
 .project-heading {
-    margin: 1vh 1vw;
-    background-color: var(--slate);
-    color: var(--bright);
-    text-align: center;
-    border-radius: 8px;
-    padding: 1vh 1vw;
     display: inline-block;
     position: relative;
     bottom: 2.5em;
     right: 2.5em;
     font-size: 1rem;
+    text-align: center;
+    background-color: var(--slate);
+    color: var(--bright);
+    border-radius: 8px;
     opacity: 0.8;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    
 }
 
 /* React project */
 .react {
     grid-area: react;
     background-image: url(../images/react.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
     background-color: var(--darkblue);
-    margin-bottom: 1vh;
+
 }
 
 /* Nodejs project */
 .node {
     grid-area: node;
     background-image: url(../images/node-blackonwhite.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
     background-color: var(--dark);
-    margin-bottom: 1vh;
+    
 }
 
 /* Mongodb project */
 .mongo {
     grid-area: mongo;
     background-image: url(../images/mongoDB.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-bottom: 1vh;
+    
 }
 
 /* Fun project */
 .fun {
     grid-area: fun;
     background-image: url(../images/dice.svg);
+    background-color: var(--darkblue);
+    
+}
+
+.project-background-images {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: var(--darkblue);
-    margin-bottom: 1vh;
 }
 
 .sub-projects { 
@@ -178,18 +170,18 @@ aside h2 {
     display: inline-block;
     color: var(--darkblue);
     background-color: var(--lightblue);
-    padding: 0.5vh 0.5vw;
     border-radius: 8px;
+    padding: 0.5vh 0.5vw;
     margin: 1vh 1vw;
 }
 
 aside img {
-    border-radius: 100%;
     position: relative;
     float: left;
-    padding-right: 2vw;
+    border-radius: 100%;
     width: 50%;
     height: auto;
+    padding-right: 2vw;
 }
 
 aside p {
@@ -201,9 +193,9 @@ aside p {
 address {
     grid-area: contact;
     font-style: normal;
-    padding: 1vh 1vw;
     color: var(--lightblue); 
     background-color: var(--darkblue); 
+    padding: 1vh 1vw;
 }
 
 address p {
@@ -211,14 +203,15 @@ address p {
 }
 
 address h2 {
+    display: inline-block;
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 1vh;
-    color: var(--darkblue);
     background-color: var(--lightblue);
-    display: inline-block;
-    padding: 0.5vh 0.5vw;
+    color: var(--darkblue);
     border-radius: 8px;
+    margin-bottom: 1vh;
+    padding: 0.5vh 0.5vw;
+    
 }
 
 address .email-icon {
@@ -264,83 +257,3 @@ footer {
 footer h2 {
     font-size: 1.5rem;
 }
-
-Respond to desktop
-
-/* @media only screen and (min-width: 1025px) {
-    aside img {
-        width: 40%;
-        height: auto;
-    }
-
-   aside p {
-       font-size: 1.25vw;
-   }
-
-   body {
-       width: 80%;
-       margin: 0 auto;
-   }
-} */
-
-/* Respond to tablets */
-/* @media only screen and (min-width: 481px)  {
-    body {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: auto 2fr 1fr 1fr auto;
-        grid-template-areas: 
-            'header header header'
-            'about main main'
-            'about react node'
-            'contact mongo fun'
-            'footer footer footer';
-
-    }
-
-    header {
-        justify-content: space-between;
-    }
-    header h1 {
-        padding-left: 2vw;
-    }
-
-    aside {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        position: relative;
-        float: left;
-        font-size: 1rem;
-        padding: 1vh 2vw;
-       
-    }
-
-    aside h2 {
-    text-align: center;
-    }
-
-    aside img {
-        margin: 1vh auto;
-    }
-
-    address {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        
-    }
-
-    address h2 {
-        margin-bottom: 2vh;
-    }
-}
-
-/* Respond to phones */
-/* @media screen and (max-width: 480px) {
-   body {
-       font-size: 3vh;
-   }
-} */ */
-
-
