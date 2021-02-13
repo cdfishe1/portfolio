@@ -276,6 +276,11 @@ footer h4 {
    aside p {
        font-size: 1.25vw;
    }
+
+   body {
+       width: 80%;
+       margin: 0 auto;
+   }
 }
 
 /* Respond to tablets */
