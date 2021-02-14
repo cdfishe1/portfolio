@@ -41,10 +41,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--slate);
-    color: var(--bright);
+    /* background-color: var(--slate); */
+    background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
     padding: 1vh 0;
 
+}
+
+header h1 {
+    color: var(--darkblue);
 }
 
 /* Nav */
@@ -169,14 +173,16 @@ main p {
 /* About me */
 aside {
     grid-area: about;
-    background-color: var(--darkblue);
-    color: var(--bright);
+    /* background-color: var(--darkblue); */
+    background-image: linear-gradient(to top left, var(--lightblue), var(--slate));
+    color: var(--dark);
     padding: 1vh;
 }
 
 aside h2 {
     display: inline-block;
     color: var(--darkblue);
+    /* background-image: linear-gradient(to right, var(--lightblue), var(--slate)); */
     background-color: var(--lightblue);
     border-radius: 8px;
     padding: 0.5vh 0.5vw;
@@ -202,7 +208,7 @@ address {
     grid-area: contact;
     font-style: normal;
     color: var(--lightblue); 
-    background-color: var(--darkblue); 
+    background-image: linear-gradient(to top left, var(--lightblue), var(--slate));
     padding: 1vh 1vw;
 }
 
@@ -225,10 +231,20 @@ address h2 {
 address .email-icon {
     width: 32px;
     height: auto;
+    margin-left: 0.5vw;
+}
+
+address figure img {
+    margin-left: 1vw;
 }
 
 address figcaption {
     font-size: 1rem;
+    color: var(--lightblue);
+    background-color: var(--darkblue);
+    padding: 0.5vh 0.5vw;
+    border-radius: 8px;
+    
 }
 
 /* Flexbox for contact icons */
@@ -243,14 +259,6 @@ address .contact-icon-wrapper a {
     text-decoration: none;
 }
 
-address .contact-icon-wrapper a:link {
-    color: var(--bright);
-}
-
-address .contact-icon-wrapper a:link {
-    color: var(--bright);
-}
-
 address .contact-icon-wrapper a:visited {
     color: var(--bright);
 }
@@ -258,8 +266,8 @@ address .contact-icon-wrapper a:visited {
 /* Footer */
 footer {
     grid-area: footer;
-    background-color: var(--slate);
-    color: var(--bright);
+    background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
+    color: var(--darkblue);
     text-align: center;
 }
 
