@@ -32,9 +32,10 @@ Site deployed at [Charles Fisher](https://cdfishe1.github.io/portfolio/)
 
 ## Scope of Project
 
-* Complete creation of html and css.
+* Used separate style sheets for reset, media queries, and style to ease editing.
 * Used flex grid and flex box for layout and responsiveness.
 * Utilized box shadows and changes in border-radius and background colors to enhance project selection. (For large screens only.)
+* Utilized gradients in backgrounds to enhance visual experience.
 * Designed from the mobile experience first up to larger screen sizes.
 * IMPORTANT NOTICE: As of 2/13/2021 I have no complete projects to fill the projects sections of this page.
 
@@ -45,12 +46,13 @@ Deploy the html file and assets folder that contains the images and css files on
 
 ## Noted Resources
 
-I made extensive use of the following resources:
+I made particular use of the following resources:
 
 * [Chris Coyer. "A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Chris House. "A Complete Guide to Grid"](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [Coolors](https://coolors.co/)
 * [CSS box-shadow property](https://www.w3schools.com/cssref/css3_pr_box-shadow.asp)
+* [Chris Coyer. "CSS Gradients"](https://css-tricks.com/css3-gradients/)
 
 ## Testing
 
