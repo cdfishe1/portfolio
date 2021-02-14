@@ -41,7 +41,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color: var(--slate); */
     background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
     padding: 1vh 0;
 
@@ -173,7 +172,6 @@ main p {
 /* About me */
 aside {
     grid-area: about;
-    /* background-color: var(--darkblue); */
     background-image: linear-gradient(to top left, var(--lightblue), var(--slate));
     color: var(--dark);
     padding: 1vh;
@@ -182,7 +180,6 @@ aside {
 aside h2 {
     display: inline-block;
     color: var(--darkblue);
-    /* background-image: linear-gradient(to right, var(--lightblue), var(--slate)); */
     background-color: var(--lightblue);
     border-radius: 8px;
     padding: 0.5vh 0.5vw;
