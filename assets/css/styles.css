@@ -29,8 +29,8 @@ body {
         'about about' 
         'contact contact'
         'footer footer';
-    column-gap: 1vw;
-    row-gap: 1vh;
+    column-gap: 2vw;
+    row-gap: 2vh;
     height: 100vh;
 }
 
@@ -79,6 +79,7 @@ main {
     background-image: url(../images/featured-project.svg);
     color: var(--light); 
     padding: 5rem;
+    box-shadow: 10px 10px 5px grey;
     
 } 
 
@@ -160,6 +161,7 @@ main p {
 /* Padding for sub-projects */
 .sub-projects { 
     padding: 3rem;
+    box-shadow: 10px 10px 5px grey;
 }
 
 /* About me */
