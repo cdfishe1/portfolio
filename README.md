@@ -34,6 +34,7 @@ Site deployed at [Charles Fisher](https://cdfishe1.github.io/portfolio/)
 
 * Complete creation of html and css.
 * Used flex grid and flex box for layout and responsiveness.
+* Utilized box shadows and changes in border-radius and background colors to enhance project selection. (For large screens only.)
 * Designed from the mobile experience first up to larger screen sizes.
 * IMPORTANT NOTICE: As of 2/13/2021 I have no complete projects to fill the projects sections of this page.
 
@@ -49,6 +50,7 @@ I made extensive use of the following resources:
 * [Chris Coyer. "A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Chris House. "A Complete Guide to Grid"](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [Coolors](https://coolors.co/)
+* [CSS box-shadow property](https://www.w3schools.com/cssref/css3_pr_box-shadow.asp)
 
 ## Testing
 

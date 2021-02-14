@@ -40,6 +40,7 @@
 
     .box-shadows {
         box-shadow: 10px 10px 5px var(--grey);
+        
     }
 
     .box-shadows:hover {
@@ -47,7 +48,11 @@
         transition: box-shadow 0.3s ease-in-out;
         opacity: 0.8;
         border-radius: 8px;
+        cursor: pointer;
+        background-color: var(--lightblue);
+        
     }
+
 
     aside {
         display: flex;
