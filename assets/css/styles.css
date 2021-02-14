@@ -14,6 +14,7 @@ h1, h2, h3, .navlinks, figcaption, footer {
     --darkblue: #03045E;
     --dark: #000;
     --bright: #fff;
+    --grey: #808080;
 }
 
 /* Sets grid for page */
@@ -79,9 +80,9 @@ main {
     background-image: url(../images/featured-project.svg);
     color: var(--light); 
     padding: 5rem;
-    box-shadow: 10px 10px 5px grey;
     
-} 
+}
+
 
 main h2 {
     display: inline-block;
@@ -161,8 +162,9 @@ main p {
 /* Padding for sub-projects */
 .sub-projects { 
     padding: 3rem;
-    box-shadow: 10px 10px 5px grey;
+
 }
+
 
 /* About me */
 aside {

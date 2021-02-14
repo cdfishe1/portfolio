@@ -38,6 +38,17 @@
         padding-left: 2vw;
     }
 
+    .box-shadows {
+        box-shadow: 10px 10px 5px var(--grey);
+    }
+
+    .box-shadows:hover {
+        box-shadow: -10px -10px 5px var(--grey);
+        transition: box-shadow 0.3s ease-in-out;
+        opacity: 0.8;
+        border-radius: 8px;
+    }
+
     aside {
         display: flex;
         flex-flow: column wrap;
