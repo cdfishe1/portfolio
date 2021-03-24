@@ -171,6 +171,7 @@ main p {
 
 /* About me */
 aside {
+    min-width: 0;
     grid-area: about;
     background-image: linear-gradient(to top left, var(--lightblue), var(--slate));
     color: var(--dark);

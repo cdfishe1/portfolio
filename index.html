@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/media.css">
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/media.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles2.css">
     <title>Charles Fisher</title>
 </head>
 <body>
     <!-- Begin Grid -->
         <!-- Header -->
-        <header>
+        <header class='borders'>
             <h1>Charles Fisher</h1>
             <!-- Navigation -->
                 <nav>
@@ -24,70 +25,63 @@
                 </nav>
         </header>
     
-        <!-- Main project-->
-        <main id="portfolio" class="project-background-images box-shadows">
-            <section>
+        
+        <main class='borders'>
+            <!-- Main project-->
+            <section class='featured-project borders'>
                 <h2>Featured Project</h2>
-            </section>  
+            </section>
         </main>
 
-        <!-- React project -->
-        <section class="project-background-images box-shadows sub-projects react">
-            <h3 class="project-heading">React</h3>
-        </section>    
+        <div class='projects-wrapper'>
+            <!-- React project -->
+           <section class="borders react">
+               <h3 class="project-heading">React</h3>
+           </section>    
+           
+           <!-- Nodejs project -->
+            <section class="borders node">
+               <h3 class="project-heading">Node.js</h3>
+           </section>
+       </div>
+
         
-        <!-- Nodejs project -->
-       <section class="project-background-images box-shadows sub-projects node">
-            <h3 class="project-heading">Node.js</h3>
-        </section>
-
-        <!-- Mongodb project -->
-        <section class="project-background-images box-shadows sub-projects mongo">
-            <h3 class="project-heading">Mongo.DB</h3>
-        </section>
-
-        <!-- Fun project -->
-        <section class="project-background-images box-shadows sub-projects fun">
-            <h3 class="project-heading">Game</h3>
-        </section>
-    
         <!-- About me -->
-        <aside id="aboutMe">
+        <aside class='borders'>
             <h2>About Charles</h2>
-            <img src="./assets/images/headshot.jpg" alt="Charles Fisher">
-            <p>I am enrolled in Northwestern University's Web Development Boot Camp. My goal is to develop the skills and projects necessary to show I am ready to join a team that will create great apps!</p>
+            <!-- <img src="./assets/images/headshot.jpg" alt="Charles Fisher"> -->
+            <p>I am a web developer with primary experience in HTML/CSS and JavaScript, as well as a current student of Northwestern University’s Web Development Bootcamp. In my previous careers I was a librarian and philosophy instructor. That previous experience helped me to think logically about structuring code, understand workflow in teams, and how to formulate precise questions to get needed resources to finish projects. I have also collaborated with clients who have an information need, but don’t know how to express that need. I know how to help clients understand what they want, and to deliver that to them. My passion now is to create web applications that clients can’t resist. I want to help your company create these irresistible apps, and to learn as much as I can to help deliver that vision.</p>
 
             <p>In the past I've taught philosophy and worked in libraries. In the present I practice Tae Kwon Do, and nurture 2 cats and one D&D game.</p>
         </aside>
 
-        <!-- Contact -->
-        <address id="contact">
+        
+        
+        
+        <!-- Footer -->
+        <footer class='borders'>
+            <!-- Contact -->
+            <address class='borders'>
                 <h2>Find me on</h2>
-                <!-- Flexbox wrapper for contact icons -->
-                <div class="contact-icon-wrapper">
-                    <figure>
+                    <figure class='borders'>
                         <a href="https://github.com/cdfishe1">
                         <img src="./assets/images/GitHub-Mark-Light-32px.png" alt="GitHub Octocat">
                         <figcaption>GitHub</figcaption></a>
                     </figure>
             
-                    <figure>
+                    <figure class='borders'>
                         <a href="https://www.linkedin.com/in/cdfishe1/"><img src="./assets/images/linkedin.jpg" alt="Linkedin Logo">
                         <figcaption>LinkedIn</figcaption></a>
                     </figure>
 
-                    <figure>
+                    <figure class='borders'>
                         <a href="mailto:cdfishe1@gmail.com">
-                        <img src="./assets/images/email-yellow.svg" class="email-icon" alt="Email icon">
+                        <!-- <img src="./assets/images/email-yellow.svg" class="email-icon" alt="Email icon"> -->
                         <figcaption>Email</figcaption>
                         </a>
                     </figure>
-                </div>
-        </address>
-        
-        <!-- Footer -->
-        <footer>
-            <h2>Charles Fisher © 2021</h2>
+                    
+            </address>
         </footer>
   
     
