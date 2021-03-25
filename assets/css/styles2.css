@@ -1,16 +1,26 @@
+/* Sets color variables */
+:root {
+    --slate: #023E8A;
+    --lightblue: #ADE8F4;
+    --darkblue: #03045E;
+    --dark: #000;
+    --bright: #fff;
+    --grey: #808080;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto 1fr 1fr auto 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
-        '. .' 
         'header header'
         'aside featured'
-        'projects projects'
-        'footer footer'
-        '. .';
+        'footer footer';
+
     gap: 1vw 1vh;
-    /* height: 100vh; */
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .borders {
@@ -22,6 +32,39 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
+    padding: 1vh 0;
+}
+
+header h1 {
+    color: var(--darkblue);
+}
+
+/* Nav */
+nav {
+    margin: 1vh;
+    
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    background-color: var(--lightblue);
+    border-radius: 8px;
+    padding: 1vh;
+    margin: 2vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:link {
+    color: var(--darkblue);
+}
+
+nav ul li a:visited {
+    color: var(--darkblue);
 }
 
 main {
@@ -37,12 +80,12 @@ main {
     width: 100%;
 }
 
-.projects-wrapper {
+/* .projects-wrapper {
     grid-area: projects;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-}
+} */
 
 .about-contact-wrapper {
     display: flex;
@@ -52,9 +95,29 @@ main {
 }
 
 aside {
-    grid-area: aside;
-    margin-bottom: 1vh;
     
+    grid-area: aside;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to top left, var(--lightblue), var(--slate));
+    color: var(--dark);
+    padding: 1vh 1vw;
+    font-size: 1.25rem;
+    
+}
+
+aside img {
+    width: 30%;
+    height: auto;
+    border-radius: 100%;
+    float: left;
+    margin-right: 1vw;
+}
+
+aside p {
+    margin-bottom: 1vh;
 }
 
 address {
