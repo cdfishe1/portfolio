@@ -109,8 +109,8 @@ aside {
 }
 
 aside img {
-    width: 30%;
-    height: auto;
+    /* width: 30%;
+    height: auto; */
     border-radius: 100%;
     float: left;
     margin-right: 1vw;
@@ -130,4 +130,7 @@ address {
 
 footer {
     grid-area: footer;
+    padding: 1vh 0;
+    background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
+    color: var(--darkblue);
 }
