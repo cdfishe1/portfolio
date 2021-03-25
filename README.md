@@ -23,7 +23,7 @@ This is my professional portfolio page.
 ![Charles Fisher landing page desktop and tablet](assets/images/desktop-screenshot.png)
 
 ### Mobile Page
-![Charles Fisher landing page mobile device](assets/images/phone-screen.gif)
+![Charles Fisher landing page mobile device](assets/images/mobile-demo.gif)
 
 
 ## Deployment

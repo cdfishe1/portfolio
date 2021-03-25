@@ -80,20 +80,6 @@ main {
     width: 100%;
 }
 
-/* .projects-wrapper {
-    grid-area: projects;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-} */
-
-.about-contact-wrapper {
-    display: flex;
-    flex-flow: column wrap;
-
-
-}
-
 aside {
     
     grid-area: aside;
