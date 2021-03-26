@@ -173,8 +173,19 @@ address a {
     margin: 1vh 1vw;
 }
 
-address i {
+address a:link {
+    color: var(--darkblue);
 }
+
+address a:visited {
+    color: var(--darkblue);
+}
+
+address a:hover {
+    color: var(--lightblue);
+}
+
+
 
 footer {
     grid-area: footer;
