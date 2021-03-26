@@ -8,13 +8,24 @@
     --grey: #808080;
 }
 
+h1, h2, h3 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+    font-family: 'PT Serif', serif;
+    line-height: 1.3rem;
+    
+}
+
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr 1fr auto;
     grid-template-areas:
         'header header'
-        'aside featured'
+        'main main'
+        'projects projects'
         'footer footer';
 
     gap: 1vw 1vh;
@@ -38,6 +49,7 @@ header {
 
 header h1 {
     color: var(--darkblue);
+    margin-left: 1vw;
 }
 
 /* Nav */
@@ -68,42 +80,65 @@ nav ul li a:visited {
 }
 
 main {
-    grid-area: featured;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.featured-project {
-    /* flex: 3 1 auto; */
-    width: 100%;
-}
-
-aside {
-    
-    grid-area: aside;
-    justify-self: center;
+    grid-area: main;
     align-self: center;
     display: flex;
-    align-items: center;
-    background-image: linear-gradient(to top left, var(--lightblue), var(--slate));
-    color: var(--dark);
+    flex-wrap: wrap;
+}
+
+main h2 {
     padding: 1vh 1vw;
-    font-size: 1.25rem;
+}
+
+ 
+.bio {
+    align-self: start;
+}
+
+.bio img {
+    border-radius: 100%;
+    float: left;
+    padding: 1vh 1vw;
+}
+
+.bio p {
+    margin-bottom: 1vh;
+    padding: 0 1vw;
+    font-size: 1.1rem;
+}
+
+.projects {
+    grid-area: projects;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-cards {
+    margin-bottom: 1vh;
+    word-wrap: break-word;
+    width: 30%;
+    padding: 1vh 1vw;
+
+}
+
+.project-cards h3 {
+    background-color: var(--slate);
+    color: var(--lightblue);
+    text-align: center;
+    padding: 1vh 0;
+    margin-bottom: 1vh;
     
 }
 
-aside img {
-    /* width: 30%;
-    height: auto; */
-    border-radius: 100%;
-    float: left;
-    margin-right: 1vw;
+.project-cards p {
+    margin-bottom: 1vh;
 }
 
-aside p {
-    margin-bottom: 1vh;
+.bold {
+    font-weight:bold;
 }
 
 address {
@@ -111,7 +146,23 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     
+}
+
+address h3 {
+    background-color: var(--slate);
+    color: var(--lightblue);
+    text-align: center;
+    margin: 1vh 0;
+    padding: 1vh 1vw;
+}
+
+address a {
+    margin: 1vh 1vw;
+}
+
+address i {
 }
 
 footer {
@@ -119,4 +170,5 @@ footer {
     padding: 1vh 0;
     background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
     color: var(--darkblue);
+   
 }

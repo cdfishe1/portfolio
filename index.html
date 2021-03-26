@@ -4,88 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <!-- <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/media.css"> -->
-    <link rel="stylesheet" href="./assets/css/styles2.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/media.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles2.css">
+    
     <title>Charles Fisher</title>
 </head>
 <body>
     <!-- Begin Grid -->
         <!-- Header -->
-        <header class=>
+        <header>
             <h1>Charles Fisher</h1>
             <!-- Navigation -->
-                <nav>
+                <!-- <nav>
                     <ul>
                         <li><a href="#portfolio" class="navlinks">Portfolio</a></li>
                         <li><a href="#aboutMe" class="navlinks">About</a></li>
                         <li><a href="#contact" class="navlinks">Contact</a></li>
                     </ul>
-                </nav>
+                </nav> -->
         </header>
         
-        <main class='borders'>
-            <!-- Main project-->
-            <section class='featured-project borders'>
-                <h2>Show Match</h2>
-                <img src="./assets/images/show-match.gif" alt="Demo of Show Match Application">
-            </section>
-
-            <!-- React project -->
-           <section class="borders react">
-            <h3 class="project-heading">React</h3>
-        </section>    
+        <!-- Bio -->
+        <main>
+           <div class='bio borders'>
+            <img src="./assets/images/headshot.jpg" alt="Charles Fisher">
+            <h2>About Charles</h2>
+            <p>My name is Charles and I'm glad you're here! I am a web developer with primary experience in HTML, CSS and JavaScript, as well as a current student of Northwestern University’s Web Development Bootcamp. In my previous careers I was a librarian and philosophy instructor. That previous experience has helped me to think logically about structuring code, understand workflow in teams, and how to formulate precise questions to get needed resources to finish projects.</p>
         
-        <!-- Nodejs project -->
-         <section class="borders node">
-            <h3 class="project-heading">Node.js</h3>
-        </section>
+            <p>I have also collaborated with clients who have an information need, but don’t know how to express that need. I know how to help clients understand what they want, and to deliver that to them. My passion now is to create web applications that clients can’t resist. I want to help your company create these irresistible apps, and to learn as much as I can to help deliver that vision.</p>
+
+            <p>In the past I've taught philosophy and worked in libraries. In the present I practice Tae Kwon Do, and nurture 2 cats and one D&D game.</p>
+           </div> 
+            
         </main>
 
-        <div class='projects-wrapper'>
-            
-       </div>
+        <!-- Project Cards -->
+        <div class='projects'>
+            <section class='borders project-cards featured'>
+                <h3>Show Match</h3>
+                <p><span class='bold'>GitHub Repo: </span><a href='https://github.com/cdfishe1/show-match' target="_blank">https://github.com/cdfishe1/show-match/</a></p>
+                <p><span class='bold'>Deployed Site: </span><a href='https://cdfishe1.github.io/show-match/'>https://cdfishe1.github.io/show-match/</a></p>
+                <p><span class='bold'>Description: </span> Show Match lets a user search for movies and tv shows, retrieve a list of results, and click a View Now button to see a YouTube trailer for that show.</p>
+            </section>
 
-        
-        <!-- About me -->
-        <aside class='borders'>
-            <!-- <h2>About Charles</h2> -->
-            <img src="./assets/images/headshot.jpg" alt="Charles Fisher">
-            <div>
-                <p>I am a web developer with primary experience in HTML, CSS and JavaScript, as well as a current student of Northwestern University’s Web Development Bootcamp. In my previous careers I was a librarian and philosophy instructor. That previous experience has helped me to think logically about structuring code, understand workflow in teams, and how to formulate precise questions to get needed resources to finish projects.</p>
-            
-                <p>I have also collaborated with clients who have an information need, but don’t know how to express that need. I know how to help clients understand what they want, and to deliver that to them. My passion now is to create web applications that clients can’t resist. I want to help your company create these irresistible apps, and to learn as much as I can to help deliver that vision.</p>
-    
-                <p>In the past I've taught philosophy and worked in libraries. In the present I practice Tae Kwon Do, and nurture 2 cats and one D&D game.</p>
-            </div>
-            
-        </aside>
+            <section class='borders project-cards'>
+                <h3>Weather Dashboard</h3>
+                <p><span class='bold'>GitHub Repo: </span><a href='https://github.com/cdfishe1/weather-app' target="_blank">https://github.com/cdfishe1/weather-app/</a></p>
+                <p><span class='bold'>Deployed Site: </span><a href='https://cdfishe1.github.io/weather-app/' target="_blank"'>https://cdfishe1.github.io/weather-app/</a></p>
+                <p><span class='bold'>Description: </span> With this weather dashboard a user can search a city, and find the current and five day weather forecast for that city.</p>
+            </section>
 
-        
-        
+            <section class='borders project-cards'>
+                <h3>Daily Planner</h3>
+                <p><span class='bold'>GitHub Repo: </span><a href='https://github.com/cdfishe1/workday-scheduler' target="_blank">https://github.com/cdfishe1/workday-scheduler/</a></p>
+                <p><span class='bold'>Deployed Site: </span><a href='https://cdfishe1.github.io/workday-scheduler/' target="_blank">https://cdfishe1.github.io/workday-scheduler/</a></p>
+                <p><span class='bold'>Description: </span> This daily work planner allows a user to save their schedule for the day, and quickly see if an event is in the past, the current hour, or yet to come.</p>
+            </section>
+        </div>
+
         
         <!-- Footer -->
         <footer class='borders'>
             <!-- Contact -->
             <address>
-                <h2>Find me on</h2>
-
-                <a href="https://github.com/cdfishe1"><i class="fab fa-github fa-3x"></i></a>
-                
-                <a href="https://www.linkedin.com/in/cdfishe1/"><i class="fab fa-linkedin fa-3x"></i></a>
-
-                <a href="mailto:cdfishe1@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
-                
-                <a href="tel:+1-312-339-3108"><i class="fas fa-phone fa-3x"></i></a>
+                    <div>
+                        <h3>Connect with me</h3>
+                        <a href="https://github.com/cdfishe1" aria-label='GitHub'  target="_blank"><i aria-hidden="true" class="fab fa-github fa-3x"></i></a>
+                        
+                        <a href="https://www.linkedin.com/in/cdfishe1/" aria-label='LinkedIn'  target="_blank"><i aria-hidden="true" class="fab fa-linkedin fa-3x"></i></a>
+                        
+                    </div>
+                    
+                    <div>
+                        <h3>Contact me</h3>
+                        <a href="mailto:cdfishe1@gmail.com" aria-label='email'><i aria-hidden="true" class="far fa-envelope fa-3x"></i></a>
+                        <a href="tel:+1-312-339-3108" aria-label='telephone'><i aria-hidden="true" class="fas fa-phone fa-3x"></i></a>
+                    
+                    </div>
+                    
+                    <div>
+                        <h3>Resume</h3>
+                        <a href="" aria-label='pdf of resume'  target="_blank"><i aria-hidden="true" class="far fa-file-pdf fa-3x"></i></a>
+                    </div>
                     
             </address>
+            
         </footer>
   
     
