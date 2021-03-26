@@ -119,7 +119,7 @@ main h2 {
 .project-cards {
     margin-bottom: 1vh;
     word-wrap: break-word;
-    width: 30%;
+    /* width: 30%; */
     padding: 1vh 1vw;
 
 }
@@ -135,6 +135,10 @@ main h2 {
 
 .project-cards p {
     margin-bottom: 1vh;
+}
+
+.project-cards img {
+    width: 90%;
 }
 
 .bold {
