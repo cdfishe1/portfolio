@@ -1,0 +1,274 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Font for headers and links */
+h1, h2, h3, .navlinks, figcaption, footer {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Sets color variables */
+:root {
+    --slate: #023E8A;
+    --lightblue: #ADE8F4;
+    --darkblue: #03045E;
+    --dark: #000;
+    --bright: #fff;
+    --grey: #808080;
+}
+
+/* Sets grid for page */
+body {
+    display: grid;
+    grid-template-columns: repeat (2 auto);
+    grid-template-rows: repeat (7 auto);
+    grid-template-areas: 
+        'header header'
+        'main main'
+        'react node'
+        'mongo fun'
+        'about about' 
+        'contact contact'
+        'footer footer';
+    column-gap: 2vw;
+    row-gap: 2vh;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
+    padding: 1vh 0;
+
+}
+
+header h1 {
+    color: var(--darkblue);
+}
+
+/* Nav */
+nav {
+    margin: 1vh;
+    
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    background-color: var(--lightblue);
+    border-radius: 8px;
+    padding: 1vh;
+    margin: 2vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:link {
+    color: var(--darkblue);
+}
+
+nav ul li a:visited {
+    color: var(--darkblue);
+}
+
+/* Featured Portfolio */
+main {
+    grid-area: main;
+    background-image: url(../images/featured-project.svg);
+    color: var(--light); 
+    padding: 5rem;
+    
+}
+
+
+main h2 {
+    display: inline-block;
+    position: relative;
+    bottom: 5em;
+    right: 4.5em;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--slate);
+    color: var(--bright);
+    border-radius: 8px;
+    opacity: 0.8;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+
+}
+
+main p {
+    padding: 1vh 1vw;
+}
+
+/* Headings for sub-projects */
+.project-heading {
+    display: inline-block;
+    position: relative;
+    bottom: 2.5em;
+    right: 2.5em;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--slate);
+    color: var(--bright);
+    border-radius: 8px;
+    opacity: 0.8;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    
+}
+
+/* React project */
+.react {
+    grid-area: react;
+    background-image: url(../images/react.svg);
+    background-color: var(--darkblue);
+
+}
+
+/* Nodejs project */
+.node {
+    grid-area: node;
+    background-image: url(../images/node-blackonwhite.svg);
+    background-color: var(--dark);
+    
+}
+
+/* Mongodb project */
+.mongo {
+    grid-area: mongo;
+    background-image: url(../images/mongoDB.png);
+    
+}
+
+/* Fun project */
+.fun {
+    grid-area: fun;
+    background-image: url(../images/dice.svg);
+    background-color: var(--darkblue);
+    
+}
+
+/* Background images for sub-projects */
+.project-background-images {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Padding for sub-projects */
+.sub-projects { 
+    padding: 3rem;
+
+}
+
+
+/* About me */
+aside {
+    min-width: 0;
+    grid-area: about;
+    background-image: linear-gradient(to top left, var(--lightblue), var(--slate));
+    color: var(--dark);
+    padding: 1vh;
+}
+
+aside h2 {
+    display: inline-block;
+    color: var(--darkblue);
+    background-color: var(--lightblue);
+    border-radius: 8px;
+    padding: 0.5vh 0.5vw;
+    margin: 1vh 1vw;
+}
+
+aside img {
+    position: relative;
+    float: left;
+    border-radius: 100%;
+    width: 50%;
+    height: auto;
+    padding-right: 2vw;
+}
+
+aside p {
+    padding: 1vh 0;
+}
+
+
+/* Contact */
+address {
+    grid-area: contact;
+    font-style: normal;
+    color: var(--lightblue); 
+    background-image: linear-gradient(to top left, var(--lightblue), var(--slate));
+    padding: 1vh 1vw;
+}
+
+address p {
+    padding: 1vh 1vw;
+}
+
+address h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    border-radius: 8px;
+    margin-bottom: 1vh;
+    padding: 0.5vh 0.5vw;
+    
+}
+
+address .email-icon {
+    width: 32px;
+    height: auto;
+    margin-left: 0.5vw;
+}
+
+address figure img {
+    margin-left: 1vw;
+}
+
+address figcaption {
+    font-size: 1rem;
+    color: var(--lightblue);
+    background-color: var(--darkblue);
+    padding: 0.5vh 0.5vw;
+    border-radius: 8px;
+    
+}
+
+/* Flexbox for contact icons */
+address .contact-icon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+address .contact-icon-wrapper a {
+    text-decoration: none;
+}
+
+address .contact-icon-wrapper a:visited {
+    color: var(--bright);
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
+    color: var(--darkblue);
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+}
