@@ -54,8 +54,7 @@ header h1 {
 
 /* Nav */
 nav {
-    margin: 1vh;
-    
+    margin: 2.5vh;
 }
 
 nav ul li {
@@ -64,7 +63,8 @@ nav ul li {
     background-color: var(--lightblue);
     border-radius: 8px;
     padding: 1vh;
-    margin: 2vw;
+    margin: 1vh 1vw;
+    
 }
 
 nav ul li a {
