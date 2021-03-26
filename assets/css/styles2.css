@@ -112,8 +112,12 @@ main h2 {
     align-self: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1vh;
 }
 
 .project-cards {
@@ -128,6 +132,7 @@ main h2 {
     background-color: var(--slate);
     color: var(--lightblue);
     text-align: center;
+    font-size: 1.5rem;
     padding: 1vh 0;
     margin-bottom: 1vh;
     
@@ -135,6 +140,8 @@ main h2 {
 
 .project-cards p {
     margin-bottom: 1vh;
+    margin-left: 1vw;
+    font-size: 1.2rem;
 }
 
 .project-cards img {
