@@ -34,10 +34,8 @@ Site deployed at [Charles Fisher](https://cdfishe1.github.io/portfolio/)
 
 * Used separate style sheets for reset, media queries, and style to ease editing.
 * Used flex grid and flex box for layout and responsiveness.
-* Utilized box shadows and changes in border-radius and background colors to enhance project selection. (For large screens only.)
 * Utilized gradients in backgrounds to enhance visual experience.
 * Designed from the mobile experience first up to larger screen sizes.
-* IMPORTANT NOTICE: As of 2/13/2021 I have no complete projects to fill the projects sections of this page.
 
 
 ## Installation
@@ -51,16 +49,7 @@ I made particular use of the following resources:
 * [Chris Coyer. "A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Chris House. "A Complete Guide to Grid"](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [Coolors](https://coolors.co/)
-* [CSS box-shadow property](https://www.w3schools.com/cssref/css3_pr_box-shadow.asp)
 * [Chris Coyer. "CSS Gradients"](https://css-tricks.com/css3-gradients/)
-
-## Testing
-
-Tested accessibility using [WAVE web accessbility evaluation tool](https://wave.webaim.org/report#/https://cdfishe1.github.io/portfolio/)
-
-* Generates 0 errors.
-
-Tested responsiveness on Android smart phone and Apple Ipad to insure the page will respond properly to smaller screen sizes.
 
 ## Credits
 
@@ -74,7 +63,7 @@ Please be kind and change content if you wish to use this code.
 
 <details><summary>Licensed under the MIT License</summary>
 
-Copyright (c) 2021 - present | Horizon Social Solution Services Inc.
+Copyright (c) 2021 - present | Charles Fisher
 
 <blockquote>
 Permission is hereby granted, free of charge, to any person obtaining a copy
