@@ -57,33 +57,6 @@ header h1 {
     
 }
 
-/* Nav */
-/* nav {
-    margin: 2.5vh;
-}
-
-nav ul li {
-    display: inline;
-    list-style: none;
-    background-color: var(--lightblue);
-    border-radius: 8px;
-    padding: 1vh;
-    margin: 1vh 1vw;
-    
-}
-
-nav ul li a {
-    text-decoration: none;
-}
-
-nav ul li a:link {
-    color: var(--darkblue);
-}
-
-nav ul li a:visited {
-    color: var(--darkblue);
-} */
-
 main {
     grid-area: main;
     align-self: center;
@@ -114,23 +87,25 @@ main h2 {
 
 .projects {
     grid-area: projects;
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 80%;
     margin: 0 auto;
 }
 
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .projects h2 {
+    justify-self: center;
     font-size: 2rem;
     margin-bottom: 1vh;
 }
 
 .project-cards {
-    margin-bottom: 1vh;
+    margin: 0.25vh 0.25vw;
     word-wrap: break-word;
-    /* width: 90%; */
+    width: 30%;
     padding: 1vh 1vw;
 
 }
@@ -154,6 +129,16 @@ main h2 {
 .project-cards img {
     width: 90%;
 }
+
+/* .featured {
+    flex: 2 1 auto;
+}
+
+.sub-projects {
+    flex: 1 1 auto;
+} */
+
+
 
 .bold {
     font-weight:bold;
@@ -196,8 +181,18 @@ address a:hover {
 
 footer {
     grid-area: footer;
-    padding: 1vh 0;
+    /* padding: 1vh 0; */
     background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
     color: var(--darkblue);
    
 }
+
+@media only screen and (max-width: 1000px) {
+    .project-cards {
+        width: 100%;
+    }
+}
+
+
+
+
