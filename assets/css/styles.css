@@ -63,19 +63,18 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
-main h2 {
-    padding: 1vh 1vw;
-}
-
  
 .bio {
     align-self: start;
 }
 
-.bio img {
+main img {
     border-radius: 100%;
     float: left;
+    padding: 1vh 1vw;
+}
+
+.bio h2 {
     padding: 1vh 1vw;
 }
 
@@ -130,15 +129,6 @@ main h2 {
     width: 90%;
 }
 
-/* .featured {
-    flex: 2 1 auto;
-}
-
-.sub-projects {
-    flex: 1 1 auto;
-} */
-
-
 
 .bold {
     font-weight:bold;
@@ -158,7 +148,7 @@ address h3 {
     color: var(--lightblue);
     text-align: center;
     margin: 1vh 0;
-    padding: 1vh 1vw;
+    padding: 0.5vh 0.5vw;
 }
 
 address a {
@@ -187,7 +177,14 @@ footer {
    
 }
 
+@media only screen and (max-width: 500px) {
+    main img {
+        float: none;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
+    
     .project-cards {
         width: 100%;
     }
