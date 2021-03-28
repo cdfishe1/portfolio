@@ -18,6 +18,7 @@ p {
     
 }
 
+/* Grid */
 body {
     display: grid;
     grid-template-columns: auto;
@@ -38,6 +39,7 @@ body {
     border: 1px solid black;
 }
 
+/* Header */
 header {
     grid-area: header;
     display: flex;
@@ -58,6 +60,7 @@ header h1 {
     
 }
 
+/* About me */
 main {
     grid-area: main;
     align-self: center;
@@ -85,6 +88,7 @@ main img {
     font-size: 1.1rem;
 }
 
+/* Projects */
 .projects {
     grid-area: projects;
     margin: 0 auto;
@@ -135,6 +139,7 @@ main img {
     font-weight:bold;
 }
 
+/* Contact Info */
 address {
     
     display: flex;
@@ -180,6 +185,7 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+
     main img {
         float: none;
     }
