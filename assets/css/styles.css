@@ -55,6 +55,7 @@ header h1 {
 .custom-nav {
     margin-right: 1vw;
     
+    
 }
 
 main {
@@ -144,6 +145,7 @@ address {
 }
 
 address h3 {
+    font-size: 1rem;
     background-color: var(--slate);
     color: var(--lightblue);
     text-align: center;
