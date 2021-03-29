@@ -20,10 +20,10 @@ This is my professional portfolio page.
 ## Portfolio Landing Page
 
 ### Desktop and Tablet Page
-![Charles Fisher landing page desktop and tablet](assets/images/desktop-screenshot.png)
+![Charles Fisher landing page desktop and tablet](assets/images/widescreen-demo.jpg)
 
 ### Mobile Page
-![Charles Fisher landing page mobile device](assets/images/mobile-demo.gif)
+![Charles Fisher landing page mobile device](assets/images/mobile-demo.png)
 
 
 ## Deployment
@@ -32,7 +32,7 @@ Site deployed at [Charles Fisher](https://cdfishe1.github.io/portfolio/)
 
 ## Scope of Project
 
-* Used separate style sheets for reset, media queries, and style to ease editing.
+* Used separate style sheets for reset and style to ease editing.
 * Used flex grid and flex box for layout and responsiveness.
 * Utilized gradients in backgrounds to enhance visual experience.
 * Designed from the mobile experience first up to larger screen sizes.
