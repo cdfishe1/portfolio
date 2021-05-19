@@ -51,7 +51,7 @@ header {
 
 header h1 {
     color: var(--darkblue);
-    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .custom-nav {
