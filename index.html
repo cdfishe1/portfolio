@@ -13,7 +13,7 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     
     <title>Charles Fisher</title>
@@ -33,27 +33,32 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       
-                      <li class="nav-item">
+                      <li class="nav-item bold">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item bold">
                         <a class="nav-link" href="#aboutMe">About Me</a>
                       </li>
-                      <li class="nav-item"></li>
+                      <li class="nav-item bold">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item bold">
+                        <a class="nav-link" href="#skills">Skills</a>
+                      </li>
+                      <li class="nav-item bold">
                         <a class="nav-link" href="#contact">Contact</a>
                       </li>
                       
                 </div>
               </nav>
               <h1>Charles Fisher</h1>
+              <p class='tagline'>Full Stack Web Development</p>
+              
         </header>
         
         <!-- Bio -->
         <main id='aboutMe'>
-           <div class='bio'>
+           <div class='bio borders'>
             <img src="./assets/images/headshot.jpg" alt="Charles Fisher">
             <h2>About Charles</h2>
             <p>I'm a Full Stack Web Developer specializing in HTML/CSS, JavaScript, NodeJs, and MySql; I will graduate in July 2021 from Northwestern University’s Bootcamp where I will earn a Certificate in Full Stack Web Development. I'm able to leverage previous experience as a librarian and philosophy instructor to think logically about structuring code, understand workflow in teams, and to formulate precise questions to secure resources needed to finish projects. My expertise includes collaborating with clients who have an information need, but are unsure as to how to fulfill said need. I know how to help clients understand what they want, and to deliver that to them. I am passionate about creating web applications that clients can’t resist. I want to help your company create these irresistible apps, and to learn as much as I can to help deliver that vision.</p>
@@ -63,14 +68,12 @@
             
         </main>
 
-        
-
         <!-- Project Cards -->
-        <div class='projects'>
+        <section class='section projects'>
             <h2 id='portfolio'>Portfolio</h2>
-            <div class='projects-wrapper'>
+            <div class='card-wrapper'>
 
-              <section class='borders project-cards'>
+              <section class='borders cards'>
                 <h3>Nanny Now</h3>
                 <p><span class='bold'>GitHub Repo: </span><a href='https://github.com/cdfishe1/nanny-now' target="_blank">https://github.com/cdfishe1/nanny-now</a></p>
                 <p><span class='bold'>Deployed Site: </span><a href='https://murmuring-stream-65661.herokuapp.com/' target="_blank">https://murmuring-stream-65661.herokuapp.com/</a></p>
@@ -81,7 +84,7 @@
                 </figure>
                 <br>
             </section>
-                <section class='borders project-cards featured'>
+                <section class='borders cards featured'>
                 
                     <h3>Show Match</h3>
                     <p><span class='bold'>GitHub Repo: </span><a href='https://github.com/cdfishe1/show-match' target="_blank">https://github.com/cdfishe1/show-match/</a></p>
@@ -93,7 +96,7 @@
                     </figure>
                 </section>
     
-                <section class='borders project-cards sub-projects'>
+                <section class='borders cards sub-projects'>
                     <h3>Weather Dashboard</h3>
                     <p><span class='bold'>GitHub Repo: </span><a href='https://github.com/cdfishe1/weather-app' target="_blank">https://github.com/cdfishe1/weather-app/</a></p>
                     <p><span class='bold'>Deployed Site: </span><a href='https://cdfishe1.github.io/weather-app/' target="_blank"'>https://cdfishe1.github.io/weather-app/</a></p>
@@ -103,11 +106,46 @@
                         <img src="./assets/images/weather-wide.gif" alt="Demo for Weather App">
                     </figure>
                 </section>
-    
-                
             </div>
-            
-        </div>
+        </section>
+
+        <section class='section skills'>
+          <h2 id='skills'>Skills</h2>
+          <div class='card-wrapper'>
+
+            <section class='borders cards'>
+              <h3>Front End</h3>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>HTML</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Bootstrap</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Flex Box and Grid</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Responsive Design</li>
+              </ul>
+            </section>
+
+              <section class='borders cards featured'>
+              
+                  <h3>Back End</h3>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>NodeJs</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Express</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>MySQL</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>ORM</li>
+                  </ul>
+              </section>
+  
+              <section class='borders cards sub-projects'>
+                  <h3>Methods</h3>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Agile</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Object Oriented Programming</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>MVC</li>
+                  </ul>
+              </section>
+          </div>
+      </section>
 
         
         <!-- Footer -->
