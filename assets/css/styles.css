@@ -48,7 +48,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
-    padding: 1vh 0;
+    padding: 2vh 0;
 }
 
 header h1 {
