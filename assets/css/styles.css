@@ -52,7 +52,7 @@ header {
 }
 
 header h1 {
-    color: var(--slate);
+    color: var(--darkblue);
     margin-right: 1vw;
 }
 
@@ -142,10 +142,6 @@ main img {
     font-size: 1.2rem;
 }
 
-/* .fa-check {
-    background-color: var(--slate);
-} */
-
 .skills {
     grid-area: skills;
 }
@@ -153,6 +149,14 @@ main img {
 
 .bold {
     font-weight:bold;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
+    color: var(--darkblue);
+   
 }
 
 /* Contact Info */
@@ -188,16 +192,6 @@ address a:visited {
 
 address a:hover {
     color: var(--lightblue);
-}
-
-
-
-footer {
-    grid-area: footer;
-    /* padding: 1vh 0; */
-    background-image: linear-gradient(to bottom right, var(--lightblue), var(--slate));
-    color: var(--darkblue);
-   
 }
 
 @media only screen and (max-width: 500px) {
