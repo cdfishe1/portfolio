@@ -28,10 +28,11 @@ This is my professional portfolio page.
 
 ## Deployment
 
-Site deployed at [Charles Fisher](https://cdfishe1.github.io/portfolio/)
+Site deployed at [Charles Fisher](https://charlesfisher.dev/)
 
 ## Scope of Project
 
+* Unique url address
 * Used separate style sheets for reset and style to ease editing.
 * Used flex grid and flex box for layout and responsiveness.
 * Utilized gradients in backgrounds to enhance visual experience.

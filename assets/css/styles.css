@@ -32,7 +32,7 @@ body {
 
     gap: 1vw 1vh;
     height: 100vh;
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
 }
 
@@ -64,12 +64,15 @@ header h1 {
 }
 
 
+
 /* About me */
 main {
     grid-area: main;
     align-self: center;
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
+    margin: 1vh auto;
 }
  
 .bio {
@@ -109,6 +112,7 @@ main img {
     font-size: 2rem;
     margin-bottom: 1vh;
     margin-left: 1vw;
+    color: var(--darkblue);
 }
 
 .cards {
