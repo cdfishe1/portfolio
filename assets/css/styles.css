@@ -37,7 +37,8 @@ body {
 }
 
 .borders {
-    border: 1px solid black;
+    border: 2px solid;
+    border-color: var(--slate);
 }
 
 /* Header */
@@ -111,11 +112,17 @@ main img {
 }
 
 .cards {
-    margin: 1vh 0.25vw;
+    margin: 3vh 1vw;
     word-wrap: break-word;
     width: 30%;
     padding: 1vh 1vw;
+    box-shadow: 10px 10px var(--darkblue);
 
+}
+
+.cards:hover {
+    box-shadow: -10px -10px var(--darkblue);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .cards h3 {
@@ -126,6 +133,22 @@ main img {
     padding: 1vh 0;
     margin-bottom: 1vh;
     
+}
+
+.cards h3 a {
+    margin-right: 1vw;
+}
+
+.cards h3 a:link {
+    color: var(--lightblue);
+}
+
+.cards h3 a:visited {
+    color: var(--lightblue);
+}
+
+.cards h3 a:hover {
+    color: goldenrod;
 }
 
 .cards p {
@@ -144,6 +167,10 @@ main img {
 
 .skills {
     grid-area: skills;
+}
+
+.skill-cards {
+    height: auto;
 }
 
 
