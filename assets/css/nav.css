@@ -1,0 +1,61 @@
+/* This code is borrowed from: 3 Steps Simple Responsive Hamburger Menu In Pure CSS */
+/* by W.S. Toh */
+/* https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ */
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+:root {
+    --slate: #023E8A;
+    --lightblue: #ADE8F4;
+    --darkblue: #03045E;
+    --dark: #000;
+    --bright: #fff;
+    --grey: #808080;
+}
+
+#hamnav {
+    width: 100%;
+    background-color: var(--darkblue);
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: var(--lightblue);
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { 
+      background: var(--lightblue);
+      color: var(--darkblue); 
+  }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+  /* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: var(--darkblue);
+      background: var(--lightblue);
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
