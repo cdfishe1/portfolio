@@ -13,7 +13,6 @@ This is my professional portfolio page.
 * [Scope of Project](#scope-of-project)
 * [Installation](#installation)
 * [Noted Resources](#noted-resources)
-* [Testing](#testing)
 * [Credits](#credits)
 * [License](#license)
 
@@ -52,6 +51,7 @@ I made particular use of the following resources:
 * [Chris House. "A Complete Guide to Grid"](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [Coolors](https://coolors.co/)
 * [Chris Coyer. "CSS Gradients"](https://css-tricks.com/css3-gradients/)
+* [W.S. Toh "3 Steps Simple Responsive Hamburger Menu In Pure CSS"](https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/)
 
 ## Credits
 
