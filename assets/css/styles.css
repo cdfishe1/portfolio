@@ -78,6 +78,7 @@ main {
 }
 
 main h2 {
+    color: var(--darkblue);
     margin-left: 1vw;
 }
  
